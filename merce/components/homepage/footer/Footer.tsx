@@ -14,7 +14,6 @@ import pay2 from "../../../public/images/pay2.png";
 import pay3 from "../../../public/images/pay3.png";
 import pay4 from "../../../public/images/pay4.png";
 import pay5 from "../../../public/images/pay5.png";
-import pay11 from "../../../public/images/pay11.jpg";
 
 const Footer = () => {
   return (

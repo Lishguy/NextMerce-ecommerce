@@ -7,13 +7,10 @@ import Link from "next/link";
 import { Eye, Heart, ShoppingCart, Check } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useCart } from "@/app/context/CartContext";
-
-import Arrival1 from "../../../public/images/newarrival1.png";
 import Arrival2 from "../../../public/images/newarrival2.png";
 import Arrival3 from "../../../public/images/newarrival3.png";
 import Arrival4 from "../../../public/images/newarrival4.png";
 import Arrival5 from "../../../public/images/newarrival5.png";
-import Arrival6 from "../../../public/images/newarrival6.png";
 import Arrival7 from "../../../public/images/newarrival7.png";
 import Arrival8 from "../../../public/images/newarrival8.png";
 

@@ -3,14 +3,6 @@
 import React, { useRef, useState, useEffect } from "react";
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-
 import browse1 from "../../../public/images/browse1.png";
 import browse2 from "../../../public/images/browse2.png";
 import browse3 from "../../../public/images/browse3.png";

@@ -21,15 +21,8 @@ import product7 from "../../../public/images/newarrival6.png";
 import product8 from "../../../public/images/newarrival5.png";
 import product9 from "../../../public/images/newarrival8.png";
 import {
-  Menu,
-  ChevronDown,
-  ChevronUp,
   Search,
   X,
-  StarIcon,
-  User,
-  Heart,
-  ShoppingCart,
   Star,
 } from "lucide-react";
 import { useState } from "react";

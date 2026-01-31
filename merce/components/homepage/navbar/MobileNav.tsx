@@ -38,11 +38,9 @@ import { useRouter } from "next/navigation";
 import { useCart } from "@/app/context/CartContext";
 
 const MobileNav = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-
   const [open, setOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
-  const [query, setQuery] = useState("");
+
   // const [cartOpen, setCartOpen] = useState(false);
   const [activeTab, setActiveTab] = useState("all");
   const [newQuery, setNewQuery] = useState("");

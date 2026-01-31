@@ -7,14 +7,8 @@ import Hero2 from "../../../public/images/hero2.jpg";
 import Hero3 from "../../../public/images/hero3.jpg";
 import Hero4 from "../../../public/images/hero4.png";
 import Hero5 from "../../../public/images/hero5.png";
-import { Card, CardContent } from "@/components/ui/card";
 import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from "embla-carousel-react";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-} from "@/components/ui/carousel";
 import Link from "next/link";
 
 const Hero = () => {

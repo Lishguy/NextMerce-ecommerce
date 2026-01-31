@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import Link from "next/link";
 import blog1 from "../../../public/images/blog1.jpg";
@@ -11,99 +9,10 @@ import blog6 from "../../../public/images/blog6.jpg";
 import blog7 from "../../../public/images/blog7.jpg";
 import blog8 from "../../../public/images/blog8.jpg";
 import Image from "next/image";
-import product1 from "../../../public/images/product1.png";
-import product2 from "../../../public/images/newarrival3.png";
-import product3 from "../../../public/images/newarrival1.png";
-import product4 from "../../../public/images/newarrival7.png";
-import product5 from "../../../public/images/newarrival4.png";
-import product6 from "../../../public/images/newarrival2.png";
-import product7 from "../../../public/images/newarrival6.png";
-import product8 from "../../../public/images/newarrival5.png";
-import product9 from "../../../public/images/newarrival8.png";
-import {
-  Menu,
-  ChevronDown,
-  ChevronUp,
-  Search,
-  X,
-  StarIcon,
-  User,
-  Heart,
-  ShoppingCart,
-  Star,
-} from "lucide-react";
-import { useState } from "react";
-import { ArrowRight } from "lucide-react";
 import { Facebook, Linkedin } from "lucide-react";
 import { FaXTwitter } from "react-icons/fa6";
 
-const page = () => {
-  const [searchOpen, setSearchOpen] = useState(false);
-  const [activeTab, setActiveTab] = useState("all");
-  const [newQuery, setNewQuery] = useState("");
-
-  const products = [
-    {
-      name: "Apple AirPros Max",
-      price: "$450",
-      oldPrice: "$500",
-      image: product1,
-    },
-    {
-      name: "Rangs 43 Inch Frameless FHD Double Glass Android TV",
-      price: "$700",
-      oldPrice: "$800",
-      image: product2,
-    },
-    {
-      name: "Portable Electric Grinder Maker",
-      price: "$777",
-      oldPrice: "$888",
-      image: product3,
-    },
-    {
-      name: "MacBook Air M4 chip, 16/256GB",
-      price: "$600",
-      oldPrice: "$699",
-      image: product4,
-    },
-    {
-      name: "iPhone 16 Pro Max",
-      price: "$899",
-      oldPrice: "$940",
-      image: product5,
-    },
-    {
-      name: "iPhone 16 Pro 8/128GB",
-      price: "$600",
-      oldPrice: "$799",
-      image: product5,
-    },
-    {
-      name: "Indoor Steel Adjustable Silent Treadmill Home Fitness",
-      price: "$888",
-      oldPrice: "$999",
-      image: product6,
-    },
-    {
-      name: "Apple Watch Ultra",
-      price: "$89",
-      oldPrice: "$99",
-      image: product7,
-    },
-    {
-      name: "Apple iPad Pro",
-      price: "$700",
-      oldPrice: "$800",
-      image: product8,
-    },
-    {
-      name: "Apple iMac M4 24-inch 2025",
-      price: "$1100",
-      oldPrice: "$999",
-      image: product9,
-    },
-  ];
+const page = () => { 
 
   const blogs = [
     {
@@ -171,62 +80,6 @@ const page = () => {
       image: blog5,
     },
   ];
-
-  const miniblogs = [
-    {
-      name: "Masterclass: Creating Delicious Italian...",
-      date: "Nov 30 2025",
-      views: "100k Views",
-      image: blog7,
-    },
-    {
-      name: "Tech Trends 2022: What's Changing in the...",
-      date: "Nov 30 2025",
-      views: "100k Views",
-      image: blog4,
-    },
-    {
-      name: "Exploring the Wonders of Modern Art: A G...",
-      date: "Nov 30 2025",
-      views: "100k Views",
-      image: blog6,
-    },
-  ];
-
-  const miniproducts = [
-    { name: "Portable Electric Grinder Maker", price: "$777", image: product3 },
-    {
-      name: "Indoor Steel Adjustable Silent Treadmill Home Fitness",
-      price: "$888",
-      image: product6,
-    },
-    {
-      name: "Rangs 43 Inch Frameless FHD Double Glass Android TV",
-      price: "$700",
-      image: product2,
-    },
-  ];
-
-  // Escapes user input so it is safe to put into a RegExp
-  const escapeRegExp = (s: string): string =>
-    s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-
-  // Highlight matches (typed and lint-friendly).
-  // NOTE: parameter name `q` avoids shadowing component state like `newQuery`.
-  const highlightText = (text: string, q: string): string => {
-    if (!q) return text; // nothing to highlight
-    const escaped = escapeRegExp(q); // escape special regex chars
-    const regex = new RegExp(`(${escaped})`, "gi");
-    return text.replace(regex, `<mark class="bg-yellow-200">$1</mark>`);
-  };
-
-  const filteredProducts = (products || []).filter((p) =>
-    p.name.toLowerCase().includes(newQuery.toLowerCase()),
-  );
-
-  const filteredBlogs = (blogs || []).filter((b) =>
-    b.name.toLowerCase().includes(newQuery.toLowerCase()),
-  );
 
   return (
     <div>

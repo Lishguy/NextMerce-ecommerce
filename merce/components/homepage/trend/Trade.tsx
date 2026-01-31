@@ -2,7 +2,6 @@
 
 import React from "react";
 import subscribe from "../../../public/images/subscribe.jpg";
-import Link from "next/link";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 

@@ -7,7 +7,6 @@ import {
   ChevronUp,
   LayoutGrid,
   List,
-  CheckIcon,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Arrival1 from "../../public/images/newarrival1.png";

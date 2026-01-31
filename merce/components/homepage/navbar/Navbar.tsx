@@ -3,14 +3,14 @@
 import Image from "next/image";
 import React from "react";
 import logo from "../../../public/images/logg.png";
-import { Button } from "@/components/ui/button";
+
 import {
   Menu,
   ChevronDown,
   ChevronUp,
   Search,
   X,
-  StarIcon,
+
   User,
   Heart,
   ShoppingCart,
@@ -18,7 +18,6 @@ import {
   Trash,
 } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
-import iphone14 from "../../../public/images/iphone14.jpg";
 import product1 from "../../../public/images/console.png";
 import product2 from "../../../public/images/newarrival3.png";
 import product3 from "../../../public/images/newarrival1.png";
@@ -44,7 +43,6 @@ import { useRouter } from "next/navigation";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
-  const [query, setQuery] = useState("");
   const { cartItems, removeFromCart, cartOpen, setCartOpen } = useCart();
   const [activeTab, setActiveTab] = useState("all");
   const [newQuery, setNewQuery] = useState("");

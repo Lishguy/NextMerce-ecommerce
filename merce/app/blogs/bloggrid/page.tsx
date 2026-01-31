@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import Link from "next/link";
 import blog1 from "../../../public/images/blog1.jpg";
@@ -11,28 +9,6 @@ import blog6 from "../../../public/images/blog6.jpg";
 import blog7 from "../../../public/images/blog7.jpg";
 import blog8 from "../../../public/images/blog8.jpg";
 import Image from "next/image";
-import product1 from "../../../public/images/product1.png";
-import product2 from "../../../public/images/newarrival3.png";
-import product3 from "../../../public/images/newarrival1.png";
-import product4 from "../../../public/images/newarrival7.png";
-import product5 from "../../../public/images/newarrival4.png";
-import product6 from "../../../public/images/newarrival2.png";
-import product7 from "../../../public/images/newarrival6.png";
-import product8 from "../../../public/images/newarrival5.png";
-import product9 from "../../../public/images/newarrival8.png";
-import {
-  Menu,
-  ChevronDown,
-  ChevronUp,
-  Search,
-  X,
-  StarIcon,
-  User,
-  Heart,
-  ShoppingCart,
-  Star,
-} from "lucide-react";
-import { useState } from "react";
 import { ArrowRight } from "lucide-react";
 
 const page = () => {

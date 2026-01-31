@@ -10,7 +10,6 @@ import Sellers from "./bestsellers/Sellers";
 import Music from "./music/Music";
 import Feedback from "./feedback/Feedback";
 import Trade from "./trend/Trade";
-import Footer from "./footer/Footer";
 
 const Homepage = () => {
   return (

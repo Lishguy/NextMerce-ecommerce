@@ -1,10 +1,6 @@
-"use client";
-
 import React from "react";
-import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Github } from "lucide-react";
 import github from "../../public/images/github logo.png";
 import google from "../../public/images/google_icon.png";
 

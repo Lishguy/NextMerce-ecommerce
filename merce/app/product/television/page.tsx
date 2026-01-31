@@ -21,7 +21,6 @@ import { ChevronLeft, ChevronRight, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import subscribe from "../../../public/images/subscribe.jpg";
 import {
-  ArrowRight,
   Scan,
   Star,
   Eye,
@@ -168,11 +167,7 @@ const page = () => {
   };
 
   const [count, setCount] = useState(1);
-  const [openDropdown, setOpenDropdown] = useState(false);
-  const [selected, setSelected] = useState("Latest Products");
-  const [view, setView] = useState<"grid" | "list">("grid");
   const [pageNumber, setPageNumber] = useState(1);
-  const [selectedTest, setSelectedTest] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState<
     "description" | "additional" | "reviews"
   >("description");
@@ -338,13 +333,6 @@ const page = () => {
     (pageNumber - 1) * itemsPerPage,
     pageNumber * itemsPerPage,
   );
-
-  const toggleDropdown = () => setOpenDropdown((prev) => !prev);
-
-  const selectOption = (value: string) => {
-    setSelected(value);
-    setOpenDropdown(false);
-  };
 
   const images = [product9, product10];
 

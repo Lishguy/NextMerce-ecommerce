@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import {
-  ShoppingCart,
   ChevronDown,
   ChevronUp,
   Lock,
@@ -42,7 +41,7 @@ const page = () => {
     "card" | "cashapp"
   >("card");
 
-  const { cartItems, removeFromCart, updateQuantity } = useCart();
+  const { cartItems } = useCart();
 
   const total = cartItems.reduce(
     (sum, item) => sum + item.price * item.quantity,
