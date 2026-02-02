@@ -4,7 +4,7 @@ import Link from "next/link";
 import github from "../../public/images/github logo.png";
 import google from "../../public/images/google_icon.png";
 
-const page = () => {
+const Register = () => {
   return (
     <div className="">
       {/* Header  */}
@@ -91,7 +91,7 @@ const page = () => {
                 </div>
 
                 <div className="flex items-center text-center justify-center mt-5 gap-1 mb-6">
-                  <p>Don't have an account?</p>
+                  <p>Don&apos;t have an account?</p>
                   <Link href="../login">
                     <span className="hover:text-blue-500 cursor-pointer">
                       Sign Up Now!
@@ -107,4 +107,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Register;

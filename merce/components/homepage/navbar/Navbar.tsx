@@ -305,11 +305,6 @@ const Navbar = () => {
     return "/product";
   };
 
-  const subtotal = cartItems.reduce(
-    (sum, item) => sum + item.price * item.quantity,
-    0,
-  );
-
   return (
     <div
       className={`

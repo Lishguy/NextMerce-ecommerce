@@ -29,7 +29,7 @@ import { useState } from "react";
 import { ArrowRight } from "lucide-react";
 import { useRouter } from "next/navigation";
 
-const page = () => {
+const Bloggridside = () => {
   const [searchOpen, setSearchOpen] = useState(false);
   const [activeTab, setActiveTab] = useState("all");
   const [newQuery, setNewQuery] = useState("");
@@ -695,4 +695,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Bloggridside;

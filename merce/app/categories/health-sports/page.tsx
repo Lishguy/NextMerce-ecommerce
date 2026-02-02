@@ -11,7 +11,7 @@ import { Eye, Heart, Check } from "lucide-react";
 import { useCart } from "@/app/context/CartContext";
 import { useRouter } from "next/navigation";
 
-const page = () => {
+const HealthSports = () => {
   const newarrivals = [
     {
       id: "fitness",
@@ -420,4 +420,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default HealthSports;

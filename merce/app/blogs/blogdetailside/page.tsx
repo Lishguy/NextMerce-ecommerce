@@ -30,7 +30,7 @@ import { Facebook, Linkedin } from "lucide-react";
 import { FaXTwitter } from "react-icons/fa6";
 import { useRouter } from "next/navigation";
 
-const page = () => {
+const Blogdetailside = () => {
   const [searchOpen, setSearchOpen] = useState(false);
   const [activeTab, setActiveTab] = useState("all");
   const [newQuery, setNewQuery] = useState("");
@@ -817,4 +817,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Blogdetailside;

@@ -10,7 +10,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Eye, Heart } from "lucide-react";
 
-const page = () => {
+const BestSelling = () => {
   const newarrivals = [
     {
       id: 1,
@@ -252,4 +252,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default BestSelling;

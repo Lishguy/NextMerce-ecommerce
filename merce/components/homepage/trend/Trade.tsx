@@ -30,7 +30,7 @@ const Trade = () => {
             {/* Left Content */}
             <div className="flex flex-col">
               <h1 className="text-[20px] md:text-[22px] lg:text-[32px] text-white font-bold w-full lg:w-[70%]">
-                Don't Miss Out Latest Trends & Offers
+                Don&apos;t Miss Out Latest Trends & Offers
               </h1>
               <p className="text-white mt-3">
                 Register to receive news about the latest offers & discount

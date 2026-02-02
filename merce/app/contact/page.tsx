@@ -2,7 +2,7 @@ import React from "react";
 import { Phone, Mail, MapPin } from "lucide-react";
 import Link from "next/link";
 
-const page = () => {
+const Contact = () => {
   return (
     <div className="mb-10">
       {/* Header  */}
@@ -150,4 +150,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Contact;

@@ -213,7 +213,7 @@ const MobileNav = () => {
     return () => {
       window.removeEventListener("keydown", handleEsc);
     };
-  }, [cartOpen]);
+  }, [cartOpen, setCartOpen]);
 
   // for routing different product
   const router = useRouter();
@@ -262,18 +262,6 @@ const MobileNav = () => {
   const pathname = usePathname();
 
   const isBlogActive = pathname.startsWith("/blogs");
-
-  const activeCategory = (() => {
-    const parts = pathname.split("/");
-
-    if (parts[1] === "categories" && parts[2]) {
-      const currentSlug = parts[2];
-
-      return categories.find((item) => makeSlug(item) === currentSlug);
-    }
-
-    return null;
-  })();
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {

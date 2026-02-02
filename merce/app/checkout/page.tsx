@@ -25,7 +25,7 @@ import countryList from "react-select-country-list";
 import { useMemo } from "react";
 // import countries from "world-countries";
 
-const page = () => {
+const Checkout = () => {
   const [showShipAddress, setShowShipAddress] = useState(false);
   const [shippingMethod, setShippingMethod] = useState<
     "free" | "fedex" | "dhl"
@@ -48,7 +48,7 @@ const page = () => {
     0,
   );
 
-  const handleChange = (e: any) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     let value = e.target.value.replace(/\D/g, "");
 
     // limit to 4 digits
@@ -964,4 +964,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Checkout;

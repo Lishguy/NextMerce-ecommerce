@@ -19,7 +19,7 @@ import { Eye, Heart, Check } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useCart } from "@/app/context/CartContext";
 
-const page = () => {
+const Popular = () => {
   const newarrivals = [
     {
       id: "imac",
@@ -570,4 +570,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Popular;

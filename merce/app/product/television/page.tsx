@@ -32,8 +32,9 @@ import {
 } from "lucide-react";
 import { useCart } from "@/app/context/CartContext";
 import { useRouter } from "next/navigation";
+import type { StaticImageData } from "next/image";
 
-const page = () => {
+const Television = () => {
   const reviews = [
     {
       id: 1,
@@ -157,17 +158,18 @@ const page = () => {
     },
   ];
 
-  type Review = {
-    id: number;
-    name: string;
-    role: string;
-    avatar: any;
-    rating: number;
-    comment: string;
-  };
+ type Review = {
+  id: number;
+  name: string;
+  role: string;
+  avatar: StaticImageData;
+  rating: number;
+  comment: string;
+};
+
 
   const [count, setCount] = useState(1);
-  const [pageNumber, setPageNumber] = useState(1);
+  const [pageNumber] = useState(1);
   const [activeTab, setActiveTab] = useState<
     "description" | "additional" | "reviews"
   >("description");
@@ -1196,7 +1198,7 @@ const page = () => {
               {/* Left Content */}
               <div className="flex flex-col">
                 <h1 className="text-[20px] md:text-[22px] lg:text-[32px] text-white font-bold w-full lg:w-[70%]">
-                  Don't Miss Out Latest Trends & Offers
+                  Don&apos;t Miss Out Latest Trends & Offers
                 </h1>
                 <p className="text-white mt-3">
                   Register to receive news about the latest offers & discount
@@ -1280,7 +1282,7 @@ const page = () => {
                   >
                     <div className="flex gap-4 items-center">
                       <div className="bg-gray-200 rounded-lg px-1 py-2">
-                        <Image src={item.image} alt={item.title} width={100} />
+                        <Image src={item.image} alt={item.title} width={100} height={100} />
                       </div>
 
                       <div>
@@ -1333,4 +1335,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Television;

@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
-const page = () => {
+const NotFound = () => {
   return (
     <div className="bg-gray-100/90  flex items-center justify-center px-4 md:px-10 lg:px-20">
       {/* WHITE CARD */}
@@ -33,4 +33,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default NotFound;

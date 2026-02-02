@@ -32,8 +32,9 @@ import {
 } from "lucide-react";
 import { useCart } from "@/app/context/CartContext";
 import { useRouter } from "next/navigation";
+import type { StaticImageData } from "next/image";
 
-const page = () => {
+const Iphone14 = () => {
   const reviews = [
     {
       id: 1,
@@ -157,17 +158,16 @@ const page = () => {
     },
   ];
 
-  type Review = {
-    id: number;
-    name: string;
-    role: string;
-    avatar: any;
-    rating: number;
-    comment: string;
-  };
-
+   type Review = {
+   id: number;
+   name: string;
+   role: string;
+   avatar: StaticImageData;
+   rating: number;
+   comment: string;
+ };
   const [count, setCount] = useState(1);
-  const [pageNumber, setPageNumber] = useState(1);
+  const [pageNumber] = useState(1);
   const [selectedTest, setSelectedTest] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState<
     "description" | "additional" | "reviews"
@@ -179,9 +179,7 @@ const page = () => {
   const [comment, setComment] = useState("");
   const MAX_LENGTH = 250;
   const [showAlert, setShowAlert] = useState(false);
-  // const [cartOpen, setCartOpen] = useState(false);
-  // const [cartItems, setCartItems] = useState<any[]>([]);
-
+  
   const newarrivals = [
     {
       id: "imac",
@@ -885,13 +883,13 @@ const page = () => {
               It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at its layout. The
               point of using Lorem Ipsum is that it has a more-or-less normal
-              distribution of letters, as opposed to using 'Content here,
-              content here', making it look like readable English.
+              distribution of letters, as opposed to using &apos;Content here,
+              content here&apos;, making it look like readable English.
             </p>
             <p className="text-md text-gray-500 leading-7">
               Many desktop publishing packages and web page editors now use
-              Lorem Ipsum as their default model text, and a search for 'lorem
-              ipsum' will uncover many web sites still in their infancy. Various
+              Lorem Ipsum as their default model text, and a search for &apos;lorem
+              ipsum&apos; will uncover many web sites still in their infancy. Various
               versions have evolved over the years, sometimes by accident,
               sometimes on purpose (injected humour and the like).
             </p>
@@ -1297,7 +1295,7 @@ const page = () => {
               {/* Left Content */}
               <div className="flex flex-col">
                 <h1 className="text-[20px] md:text-[22px] lg:text-[32px] text-white font-bold w-full lg:w-[70%]">
-                  Don't Miss Out Latest Trends & Offers
+                  Don&apos;t Miss Out Latest Trends & Offers
                 </h1>
                 <p className="text-white mt-3">
                   Register to receive news about the latest offers & discount
@@ -1434,4 +1432,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Iphone14;

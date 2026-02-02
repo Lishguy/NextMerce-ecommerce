@@ -24,7 +24,7 @@ import { Eye, Heart, Check } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useCart } from "@/app/context/CartContext";
 
-const page = () => {
+const Shop = () => {
   const newarrivals = [
     {
       id: "imac",
@@ -170,7 +170,7 @@ const page = () => {
 
   /* 1. COLOR FILTER — overrides everything */
   if (activeColors.length > 0) {
-    let combinedIds: string[] = [];
+    const combinedIds: string[] = [];
 
     activeColors.forEach((c) => {
       const ids = colorMap[c];
@@ -186,7 +186,7 @@ const page = () => {
 
   /* 2. SIZE FILTER — only runs if NO color override */
   if (activeColors.length === 0 && activeSizes.length > 0) {
-    let combinedSizeIds: string[] = [];
+    const combinedSizeIds: string[] = [];
 
     activeSizes.forEach((s) => {
       const ids = sizeMap[s];
@@ -202,7 +202,7 @@ const page = () => {
 
   /* 3. CATEGORY FILTER — runs after size (if no color override) */
   if (activeColors.length === 0 && activeCategories.length > 0) {
-    let combinedCatIds: string[] = [];
+    const combinedCatIds: string[] = [];
 
     activeCategories.forEach((cat) => {
       const ids = categoryMap[cat];
@@ -1042,4 +1042,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Shop;

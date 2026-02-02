@@ -12,7 +12,7 @@ import { Eye, Heart, Check } from "lucide-react";
 import { useCart } from "@/app/context/CartContext";
 import { useRouter } from "next/navigation";
 
-const page = () => {
+const LaptopPc = () => {
   const newarrivals = [
     {
       id: "imac",
@@ -428,4 +428,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default LaptopPc;

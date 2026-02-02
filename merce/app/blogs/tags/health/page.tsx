@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 
-const page = () => {
+const Health = () => {
 
   return (
     <div>
@@ -32,4 +32,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Health;

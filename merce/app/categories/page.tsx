@@ -1,6 +1,6 @@
 import React from "react";
 
-const Category = () => {
+const Categories = () => {
   return (
     <div>
       <div className="flex justify-between items-center">
@@ -15,4 +15,4 @@ const Category = () => {
   );
 };
 
-export default Category;
+export default Categories;

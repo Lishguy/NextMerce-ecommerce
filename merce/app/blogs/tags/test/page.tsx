@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-const page = () => {
+const Test = () => {
 
   return (
     <div>
@@ -31,4 +31,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Test;

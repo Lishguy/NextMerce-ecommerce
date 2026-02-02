@@ -13,7 +13,7 @@ import blog8 from "../../../../public/images/blog8.jpg";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 
-const page = () => {
+const TechCategory = () => {
   const blogs = [
     {
       slug: "masterclass",
@@ -148,4 +148,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default TechCategory;

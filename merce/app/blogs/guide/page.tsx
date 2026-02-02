@@ -12,7 +12,7 @@ import Image from "next/image";
 import { Facebook, Linkedin } from "lucide-react";
 import { FaXTwitter } from "react-icons/fa6";
 
-const page = () => {
+const Guide = () => {
 
   const blogs = [
     {
@@ -269,4 +269,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Guide;

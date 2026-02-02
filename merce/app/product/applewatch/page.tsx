@@ -32,8 +32,9 @@ import {
 } from "lucide-react";
 import { useCart } from "@/app/context/CartContext";
 import { useRouter } from "next/navigation";
+import type { StaticImageData } from "next/image";
 
-const page = () => {
+const Applewatch = () => {
   const reviews = [
     {
       id: 1,
@@ -158,16 +159,16 @@ const page = () => {
   ];
 
   type Review = {
-    id: number;
-    name: string;
-    role: string;
-    avatar: any;
-    rating: number;
-    comment: string;
-  };
+  id: number;
+  name: string;
+  role: string;
+  avatar: StaticImageData;
+  rating: number;
+  comment: string;
+};
 
   const [count, setCount] = useState(1);
-  const [pageNumber, setPageNumber] = useState(1);
+  const [pageNumber] = useState(1);
   const [activeTab, setActiveTab] = useState<
     "description" | "additional" | "reviews"
   >("description");
@@ -179,8 +180,6 @@ const page = () => {
   const MAX_LENGTH = 250;
   const [showAlert, setShowAlert] = useState(false);
 
-  // const [cartOpen, setCartOpen] = useState(false);
-  // const [cartItems, setCartItems] = useState<any[]>([]);
 
   const newarrivals = [
     {
@@ -332,7 +331,7 @@ const page = () => {
   const itemsPerPage = 8;
 
   const paginatedProducts = newarrivals.slice(
-    (pageNumber - 1) * itemsPerPage,
+   (pageNumber - 1) * itemsPerPage,
     pageNumber * itemsPerPage,
   );
 
@@ -806,7 +805,7 @@ const page = () => {
             <p className="text-md text-gray-500 leading-7">
               <span className="font-bold">Lorem Ipsum</span> is simply dummy
               text of the printing and typesetting industry. Lorem Ipsum has
-              been the industry's standard dummy text ever since the 1500s, when
+              been the industrys standard dummy text ever since the 1500s, when
               an unknown printer took a galley of type and scrambled it to make
               a type specimen book. It has survived not only five centuries, but
               also the leap into electronic typesetting, remaining essentially
@@ -1188,7 +1187,7 @@ const page = () => {
               {/* Left Content */}
               <div className="flex flex-col">
                 <h1 className="text-[20px] md:text-[22px] lg:text-[32px] text-white font-bold w-full lg:w-[70%]">
-                  Don't Miss Out Latest Trends & Offers
+                  Don&apos;t Miss Out Latest Trends & Offers
                 </h1>
                 <p className="text-white mt-3">
                   Register to receive news about the latest offers & discount
@@ -1330,4 +1329,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Applewatch;

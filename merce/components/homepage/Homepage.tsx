@@ -1,7 +1,6 @@
 import React from "react";
 import Hero from "./hero/Hero";
 import Subhero from "./subhero/Subhero";
-import Browse from "./browse/Browse";
 import Editbrowse from "./browse/Editbrowse";
 import Arrival from "./newarrivals/Arrival";
 import Iphone from "./iphone/Iphone";

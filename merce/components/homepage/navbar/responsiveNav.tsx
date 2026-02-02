@@ -4,11 +4,10 @@ import React from "react";
 import MobileNav from "./MobileNav";
 import Navbar from "./Navbar";
 import { useEffect, useState } from "react";
-import { FaArrowUp } from "react-icons/fa";
 import { ChevronUp } from "lucide-react";
 
 const ResponsiveNav = () => {
-  const [scrolled, setScrolled] = useState(false);
+  const [, setScrolled] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
 
   // ✅ Detect scroll

@@ -6,7 +6,7 @@ import { ShoppingCart, Trash } from "lucide-react";
 import { useCart } from "@/app/context/CartContext";
 import Image from "next/image";
 
-const page = () => {
+const Cart = () => {
   const { cartItems, removeFromCart, updateQuantity } = useCart();
 
   const total = cartItems.reduce(
@@ -226,4 +226,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Cart;

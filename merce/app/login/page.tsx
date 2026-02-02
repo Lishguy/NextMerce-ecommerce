@@ -4,7 +4,7 @@ import Link from "next/link";
 import github from "../../public/images/github logo.png";
 import google from "../../public/images/google_icon.png";
 
-const page = () => {
+const Login = () => {
   return (
     <div className="">
       {/* Header  */}
@@ -142,4 +142,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Login;

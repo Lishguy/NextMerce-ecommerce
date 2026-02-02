@@ -12,7 +12,7 @@ import { Eye, Heart, Check } from "lucide-react";
 import { useCart } from "@/app/context/CartContext";
 import { useRouter } from "next/navigation";
 
-const page = () => {
+const GamesVideos = () => {
   const newarrivals = [
     {
       id: "16pro",
@@ -429,4 +429,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default GamesVideos;

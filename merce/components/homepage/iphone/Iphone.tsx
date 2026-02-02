@@ -16,7 +16,7 @@ const Iphone = () => {
               UP TO 30% OFF
             </h1>
             <p className="mt-3">
-              iPhone 14 has the same superspeedy chip that's in iPhone 13 Pro,
+              iPhone 14 has the same superspeedy chip that&apos;s in iPhone 13 Pro,
               A15 Bionic, with a 5‑core GPU, powers all the latest features.
             </p>
             <Link href="/product/iphone14">

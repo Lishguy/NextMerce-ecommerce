@@ -67,7 +67,7 @@ const Footer = () => {
           <p className="hover:text-blue-500 cursor-pointer">Privacy Policy</p>
           <p className="hover:text-blue-500 cursor-pointer">Refund Policy</p>
           <p className="hover:text-blue-500 cursor-pointer">Terms of Use</p>
-          <p className="hover:text-blue-500 cursor-pointer">FAQ's</p>
+          <p className="hover:text-blue-500 cursor-pointer">FAQ&apos;s</p>
           <p className="hover:text-blue-500 cursor-pointer">Contact</p>
         </div>
 
