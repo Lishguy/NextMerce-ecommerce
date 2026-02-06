@@ -340,7 +340,7 @@ const MobileNav = () => {
         {/* === MIDDLE ROW: Category + Search === */}
         <div className="flex items-center w-full gap-3 mt-2 xl:mt-0">
           {/* All Categories Dropdown */}
-          <div ref={dropdownRef} className="relative w-[40%] ">
+          <div ref={dropdownRef} className="relative w-[45%] ">
             <div
               onClick={() => setOpen(!open)}
               className="flex items-center justify-center gap-2 border py-2.5 cursor-pointer bg-gray-50 rounded-full transition text-sm px-2 w-full hover:bg-gray-100"
@@ -371,7 +371,7 @@ const MobileNav = () => {
           </div>
 
           {/* Search bar */}
-          <div className="relative mx-auto">
+          <div className="relative w-[55%] mx-auto">
             <div
               onClick={() => setSearchOpen(true)}
               className="flex items-center  border  py-2 px-4 bg-gray-50 rounded-full w-full"
@@ -539,12 +539,12 @@ const MobileNav = () => {
                                         __html: highlightText(b.name, newQuery),
                                       }}
                                     />
-                                    <p
+                                    {/* <p
                                       className="text-[12px]"
                                       dangerouslySetInnerHTML={{
                                         __html: highlightText(b.desc, newQuery),
                                       }}
-                                    />
+                                    /> */}
                                   </div>
                                 </div>
                               </Link>
@@ -840,7 +840,7 @@ const MobileNav = () => {
 
                 {/* Bottom section */}
                 <div className="flex flex-col gap-4 top-0 justify-end">
-                  <Link href="/signin" onClick={() => setMobileMenuOpen(false)}>
+                  <Link href="/register" onClick={() => setMobileMenuOpen(false)}>
                     <div className="flex items-center gap-2 text-gray-700 hover:text-blue-600">
                       <User size={18} />
                       <span>Sign In / Register</span>

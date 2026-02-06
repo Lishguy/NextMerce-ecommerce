@@ -99,7 +99,7 @@ const Blogdetails = () => {
 
       {/* Body  */}
       <div className="bg-gray-100/90 mt-10  mb-16 w-full">
-        <div className="flex flex-col lg:flex-row py-26 px-4 xl:px-0 gap-8">
+        <div className="flex flex-col lg:flex-row py-26 px-2 xl:px-0 gap-8">
           {/* main content  */}
           <div className="w-full justify-center items-center px-10 md:px-52 ">
             {blogs.slice(0, 1).map((blog, index) => (
@@ -125,7 +125,7 @@ const Blogdetails = () => {
                       </span>
                     </div>
                   </div>
-                  <h1 className="text-4xl font-semibold text-black/80">
+                  <h1 className="text-3xl md:text-4xl font-semibold text-black/80">
                     {blog.name}
                   </h1>
                   <div className="mt-6">

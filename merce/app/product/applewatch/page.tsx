@@ -571,9 +571,9 @@ const Applewatch = () => {
                 <Star size={19} className="fill-gray-300  text-gray-300" />
               </div>
 
-              <div>( 2 customer reviews )</div>
+              <div className="text-sm md:text-md">( 2 customer reviews )</div>
 
-              <div className="flex gap-1 text-green-600">
+              <div className="flex gap-1 text-green-600 text-sm md:text-md">
                 <CircleCheck />
                 <p>In Stock</p>
               </div>
@@ -754,7 +754,7 @@ const Applewatch = () => {
           <div className="flex justify-between md:justify-start gap-2 md:gap-8 lg:gap-12 w-full lg:w-[50%] px-4 lg:px-0">
             <p
               onClick={() => setActiveTab("description")}
-              className={`text-md lg:text-[18px] font-semibold cursor-pointer pb-2
+              className={`text-[13px] lg:text-[18px] font-semibold cursor-pointer pb-2
                     ${
                       activeTab === "description"
                         ? "text-blue-700 border-b-2 border-blue-700"
@@ -767,7 +767,7 @@ const Applewatch = () => {
 
             <p
               onClick={() => setActiveTab("additional")}
-              className={`text-md lg:text-[18px] font-semibold cursor-pointer pb-2
+              className={`text-[13px] lg:text-[18px] font-semibold cursor-pointer pb-2
                     ${
                       activeTab === "additional"
                         ? "text-blue-700 border-b-2 border-blue-700"
@@ -780,7 +780,7 @@ const Applewatch = () => {
 
             <p
               onClick={() => setActiveTab("reviews")}
-              className={`text-md lg:text-[18px] font-semibold cursor-pointer pb-2
+              className={`text-[13px] lg:text-[18px] font-semibold cursor-pointer pb-2
                     ${
                       activeTab === "reviews"
                         ? "text-blue-700 border-b-2 border-blue-700"

@@ -47,6 +47,33 @@ const Watches = () => {
     setOpenDropdown(false);
   };
 
+    // Route for product listing
+  const getProductRoute = (title: string) => {
+    const t = title.toLowerCase();
+
+    if (t.includes("imac")) return "/product/imac";
+    if (t.includes("ipad")) return "/product/ipad";
+
+    // ✅ iPhone rules (specific → general)
+    if (t.includes("iphone 16 pro max")) return "/product/iphone16promax";
+
+    if (t.includes("iphone 16 pro")) return "/product/iphone14";
+
+    // fallback for other iphones if needed
+    if (t.includes("iphone")) return "/product/iphone14";
+
+    if (t.includes("macbook")) return "/product/macbook";
+    if (t.includes("treadmill") || t.includes("fitness"))
+      return "/product/fitness";
+    if (t.includes("frameless") || t.includes("tv") || t.includes("television"))
+      return "/product/television";
+    if (t.includes("gamepad")) return "/product/gamepad";
+    if (t.includes("watch")) return "/product/applewatch";
+    if (t.includes("grinder")) return "/product/grinder";
+
+    return "/product";
+  }
+  
   return (
     <div className="">
       {showAlert && (
@@ -174,7 +201,8 @@ const Watches = () => {
               {newarrivals.map((item) => {
                 const isInCart = cartItems.some((ci) => ci.id === item.id);
                 return (
-                  <div key={item.id} className="relative group">
+                  <div key={item.id} className="relative group"
+                  onClick={() => router.push(getProductRoute(item.title))}>
                     <div className="bg-white rounded-md">
                       <Image
                         src={item.image}
@@ -295,6 +323,7 @@ const Watches = () => {
                   <div
                     key={item.id}
                     className="bg-white w-full flex px-6 py-10 rounded-md shadow-sm border group relative"
+                    onClick={() => router.push(getProductRoute(item.title))}
                   >
                     {/* LEFT — PRODUCT IMAGE */}
                     <div className="min-w-0 md:min-w-[220px] flex flex-col items-center justify-start relative">

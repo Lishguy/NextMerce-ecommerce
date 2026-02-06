@@ -830,23 +830,23 @@ const Checkout = () => {
                                   <Image
                                     src={visa}
                                     alt="visa"
-                                    className="w-7"
+                                    className="w-5 md:w-7"
                                   />
                                   <Image
                                     src={mastercard}
                                     alt="mastercard"
-                                    className="w-12"
+                                    className="w-10 md:w-12"
                                   />
                                   <Image
                                     src={amex}
                                     alt="amex"
-                                    className="w-8"
+                                    className="w-6 md:w-8"
                                   />
                                 </div>
                               </div>
                             </div>
 
-                            <div className="flex gap-4">
+                            <div className="flex flex-col md:flex-row ap-2 md:gap-4">
                               {/* expiration date  */}
                               <div className="flex flex-col mt-5 flex-1">
                                 <h1>Expiration (MM/YY)</h1>

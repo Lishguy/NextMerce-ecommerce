@@ -278,8 +278,8 @@ const Blogdetailside = () => {
       </div>
 
       {/* Body  */}
-      <div className="bg-gray-100/90 mt-10  mb-16 w-full">
-        <div className="flex flex-col lg:flex-row py-26 px-4 xl:px-0 gap-8">
+      <div className="bg-gray-100/90 mt-10 mb-16 w-full">
+        <div className="flex flex-col lg:flex-row py-20 md:py-26 px-4 xl:px-0 gap-8">
           {/* left content  */}
           <div className="w-full lg:w-[65%]">
             {blogs.slice(0, 1).map((blog, index) => (
@@ -305,7 +305,7 @@ const Blogdetailside = () => {
                       </span>
                     </div>
                   </div>
-                  <h1 className="text-4xl font-semibold text-black/80">
+                  <h1 className="text-3xl md:text-4xl font-semibold text-black/80">
                     {blog.name}
                   </h1>
                   <div className="mt-6">
